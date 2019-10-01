@@ -1,3 +1,7 @@
 **/*.swp
 **/*.swo
 code/.ipynb_checkpoints
+_site
+vendor
+.jekyll-cache
+.sass-cache
