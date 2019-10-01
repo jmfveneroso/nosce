@@ -1,21 +1,118 @@
 ---
 layout: default
 ---
-<!-- Posts -->
-<div id="posts">
-
-	{% for post in paginator.posts %}
-
-	  <div class="post">
-	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{%if post.header %}{{ post.header }}{% else %}{{ post.title }}{% endif %}</a></h2>
-      <div class="by-line parent">
-        <time datetime="{{ post.date | date_to_xmlschema }}"> <i>{{ post.date | date_to_string }}</i> </time>
-        &nbsp;&nbsp; &middot; &nbsp;&nbsp;
-        <span><i>{{ post.duration }}</i> </span>
-      </div>
-      <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-	  </div>
-
-    {% endfor %}
-
+<div>
+  <img width="230" height="230" src="img/profile_pic.jpeg"/>
+  <p align="center" class="name">João Mateus de Freitas Veneroso</p>
+  <p align="center">
+    <a href="jmfveneroso@gmail.com" class="email">jmfveneroso@gmail.com</a> 
+    <br/>
+    <a href="https://github.com/jmfveneroso/">Github</a>
+    <br/>
+    <a href="/files/cv.pdf">Curriculum Vitae</a>
+  </p>
+  <hr />
+  <div>
+    <h3>Overview</h3>
+    <p>
+      I am currently working with my supervisor, Prof. Berthier Ribeiro-Neto, 
+      as a master's student at the Department of Computer Science of the Federal 
+      University of Minas Gerais, building statistical 
+      <a href="files/ner-on-html.pdf">named entity extraction systems</a> 
+      and working on the 
+      <a href="files/pscore.pdf">measurement of scientific impact through a novel academic index</a>.
+    </p>
+  </div>
+  <hr />
+  <div>
+    <h3>Education</h3>
+    <p>
+    M.S. in Computer Science at <a href="https://ufmg.br/international-visitors">Universidade Federal de Minas Gerais</a>
+    </p>
+    <p>
+    Bachelor in Economics at <a href="https://ufmg.br/international-visitors">Universidade Federal de Minas Gerais</a>
+    </p>
+  </div>
+  <hr />
+  <div>
+    <h3>Publications</h3> 
+    <ul>
+      <li>
+        João Mateus de Freitas Veneroso and Berthier Ribeiro-Neto. 2018. 
+        <a href="https://dl.acm.org/citation.cfm?doid=3197026.3203902">
+          Entity Name Extraction from Faculty Directories. 
+        </a>
+        In Proceedings of the 
+        18th ACM/IEEE on Joint Conference on Digital Libraries (JCDL '18). ACM, 
+        New York, NY, USA, 389-390. DOI: https://doi.org/10.1145/3197026.3203902.
+      </li>
+      <li>
+        <a href="http://www.cultura.gov.br/resultados-de-editais/-/asset_publisher/JW3UoKoVDSTH/content/premio-otavio-afonso-2012/10883">
+          Otávio Afonso Award 
+        </a>
+        with the monograph 
+        <a href="files/mono-copyright.pdf">
+          "An economic study of copyright: contributions, limitations and alternatives to 
+          the present legislation"
+        </a>
+        by Ministry of Culture, Brazil, 2012.
+      </li>
+    </ul>
+  </div>
+  <hr />
+  <div>
+    <h3>Research and Teaching Experience</h3>
+    <p>
+      Research Assistant under the supervision of 
+      <a href="http://ufmg.academia.edu/GilbertoLibanio">Prof. Gilberto Libânio</a>, 
+      Department of Economics of the Federal University of Minas Gerais, 
+      Belo Horizonte, Brazil (June 2011 - May 2012).
+      Worked on the project 
+      <a href="https://www.abdi.com.br/inovacao/sondagem-de-inovacao">
+        "Survey on the Technological Innovation in Brazil".
+      </a>
+    </p>
+    <p>
+      Research Assistant under the supervision of Prof. Hugo da Gama Cerqueira, 
+      Department of Economics Department of Economics of the Federal University 
+      of Minas Gerais, Belo Horizonte, Brazil (October 2012 - May 2013)
+      <a href="considerations_about_money_in_the_writings_of_david_hume.pdf">
+        Considerations about money in the writings of David Hume
+      </a>
+    </p>
+  </div>
+  <hr />
+  <div>
+    <h3>Study Abroad Experiences</h3>
+    <p>
+      <a href="/files/susi.pdf">
+        2013 SUSI Institute for Brazilian Student Leaders on US History 
+        and Government 
+      </a>
+      at the University of Tennessee-Knoxville (UTK), 
+      Knoxville, TN, USA, 2013. A very selective program sponsored by the U.S. 
+      Department of State that selected undergraduate students leaders from 
+      foreign countries to improve their understanding of the United States 
+      and to develop their leadership skills through an academic residency.
+    </p>
+  </div>
+  <hr />
+  <div>
+    <h3>Work Experience</h3>
+    <p>
+      CTO at <a href="https://netlex.com.br/">Netlex LLC</a>, Belo Horizonte, Brazil. (January 2014 - June 2017)
+      Lead developer and technological leader in a legal tech startup with a 
+      team of eight developers. The company is currently one of the most important 
+      legal tech companies in Brazil. It was selected between hundreds of 
+      competitors to participate in 
+      <a href="http://seed.mg.gov.br/quem_ja_participou/#1450383761198-3827fb5f-0c44">
+        Seed MG (Startups and Entrepreneurship Ecosystem Development)
+      </a>,
+      an equity free acceleration program promoted by the Brazilian government.
+      It delivers cloud solutions related to contract 
+      lifecycle management and document assembly. At NetLex I developed a programming 
+      language for lawyers to automate the process of contract creation, this product 
+      is the main source of revenue for NetLex.
+    </p>
+  </div>
 </div>
