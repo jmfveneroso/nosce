@@ -117,3 +117,27 @@ a {
 
 // tables
 td {border-bottom: 1px solid #f2f2f2}
+
+img.latex {
+  max-width: inherit;
+  display: inline;
+  margin: 0;
+  margin-bottom: 0px;
+}
+
+img.inline-img {
+  display: inline;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 10px;
+}
+
+img.equation {
+  margin-bottom: 0px;
+  width: auto;
+}
+
+table.my-table {
+  margin: 0 auto;
+}
